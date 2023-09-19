@@ -4,10 +4,13 @@ import foto from '../../../public/assets/img/hero.png'
 import HeroStyled, {  HeroRight } from './styles';
 
 
+type Props = {
+  id: string;
+}
 
-const Hero = () => {
+const Hero = ({ id }: Props) => {
   return(
-    <HeroStyled>
+    <HeroStyled id={id}>
       <HeroLeft />
       <HeroRight>
         <img src={foto} alt="" />

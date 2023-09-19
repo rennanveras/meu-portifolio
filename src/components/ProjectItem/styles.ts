@@ -8,6 +8,10 @@ export const CardProject = styled.li`
   text-align: start;
   cursor: pointer;
 
+  @media (max-width: 480px) {
+    padding: 8px;
+  }
+
   &:hover {
     img {
         transform: scale(1.1);
@@ -25,6 +29,10 @@ export const CardProject = styled.li`
     width: 100%;
     height: 200px;
     margin-bottom: 10px;
+
+    @media (max-width: 480px) {
+    height: 160px;
+    }
     
     img {
       width: inherit;

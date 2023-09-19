@@ -6,7 +6,7 @@ type Props = {
 
 const Titulo = (props: Props) => {
   return (
-    <TituloEstilo>{props.children}</TituloEstilo>
+    <TituloEstilo className='fontMontserrat'>{props.children}</TituloEstilo>
   );
 }
 

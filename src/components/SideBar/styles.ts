@@ -4,6 +4,16 @@ type ContainerProps = {
   sidebar: boolean;
 }
 
+export const Background = styled.div`
+  position: fixed;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: transparent;
+
+`
+
 export const Container = styled.aside<ContainerProps>`
   background-color: #1269eb;
   position: fixed;

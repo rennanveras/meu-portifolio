@@ -33,5 +33,9 @@ export const Container = styled.div`
     width: 100%;
     padding:0 20px;
   }
+
+  section {
+    padding: 50px 0;
+  }
 `
 

@@ -1,15 +1,25 @@
-import React from 'react'
 import { Container } from './styles'
 
 type Props = {
   Icon: string;
   Text: string;
-  src?: string;
+  id?: string;
 }
 
-const SidebarItem = ({ Icon, Text, src }: Props) => {
+const SidebarItem = ({ Icon, Text, id }: Props) => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerHeight = 96;
+      const offset = element.offsetTop - headerHeight;
+      window.scrollTo({
+        top: offset,
+        behavior: 'smooth',
+      });
+    }
+  };
   return (
-      <a href={src}>
+      <a onClick={() => scrollToSection(`${id}`)}>
         <Container >
             <Icon />
             {Text}

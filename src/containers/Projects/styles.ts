@@ -1,14 +1,21 @@
 import { styled } from "styled-components";
 
 export const ContainerProject = styled.section`
-  margin: 50px 0;
   text-align: center;
-  padding: 0 10px;
+
+  @media (max-width: 480px){
+      padding: 0;
+    }
 
   .title {
     margin: 40px 0;
     font-size: 30px;
     text-transform: uppercase;
+
+    @media (max-width: 480px){
+      font-size: 24px;
+      padding: 0;
+    }
   }
 `
 

@@ -1,11 +1,16 @@
 import { ModalProject } from "../../components/ModalProject";
 import { ProjectItem } from "../../components/ProjectItem";
+import Titulo from "../../components/Titulo";
 import { projectList } from "../../data/projectsList";
 import { Project } from "../../types/Project";
 import { ContainerProject, ListProjects } from "./styles";
 import { useState } from 'react'
 
-const Projects = () => {
+type Props = {
+  id: string;
+}
+
+const Projects = ({ id }: Props) => {
   const [showModal, setShowModal] = useState(false);
   const [projectSelected, setProjectSelected] = useState<Project | undefined>(undefined);
 
@@ -26,8 +31,8 @@ const Projects = () => {
   }
 
   return (
-    <ContainerProject>
-      <h2 className="title fontMontserrat">Meus projetos</h2>
+    <ContainerProject id={id}>
+      <Titulo>Meus projetos</Titulo>
       <>
         <ListProjects className="projects">
           {projectList.map((item) => (

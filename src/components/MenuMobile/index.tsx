@@ -13,7 +13,7 @@ export const MenuMobile = () => {
 
   return (
     <MobileMenu>
-      <FaBars className="lal" size={30} onClick={showSideBar} />
+      <FaBars size={30} onClick={showSideBar} />
       { isVisible && <SideBar active={isVisible} setActive={setIsVisible}/>}
     </MobileMenu>
   );

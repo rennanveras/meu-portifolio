@@ -1,7 +1,13 @@
 import styled from 'styled-components'
 
 export const Titulo = styled.h2`
-  color: #25f3ee;
-  font-weight: bold;
-  font-size: 14px;
+  padding: 40px 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (max-width: 678px) {
+    padding: 22px 0;
+    font-size: 24px;
+  }
 `

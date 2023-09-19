@@ -5,13 +5,11 @@ import styled from 'styled-components';
 const HeroStyled = styled.section`
   display: flex;
   justify-content: space-between;
-  padding: 42px 0 ;
   gap: 20px;
   
   
   @media (max-width:768px){
     flex-direction: column;
-    padding: 22px 0;
   }
 
   
