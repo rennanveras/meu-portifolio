@@ -5,7 +5,7 @@ import { MobileMenu } from './styles';
 
 
 export const MenuMobile = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   const showSideBar = () => setIsVisible(!isVisible);
   
@@ -14,7 +14,9 @@ export const MenuMobile = () => {
   return (
     <MobileMenu>
       <FaBars size={30} onClick={showSideBar} />
-      { isVisible && <SideBar active={isVisible} setActive={setIsVisible}/>}
+      { isVisible && 
+        <SideBar active={isVisible} setActive={setIsVisible}/>
+      }
     </MobileMenu>
   );
 };

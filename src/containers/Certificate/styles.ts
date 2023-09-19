@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Areaa = styled.div`
+export const ContentSlide = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;

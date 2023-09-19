@@ -1,5 +1,5 @@
 import {Swiper, SwiperSlide} from 'swiper/react'
-import { Areaa, ImgSlide } from './styles';
+import { ContentSlide, ImgSlide } from './styles';
 import { useState } from 'react';
 import { certificatesList } from '../../data/CertificatesList';
 import Titulo from '../../components/Titulo';
@@ -28,18 +28,17 @@ const Certificates = ({ id }: Props) => {
     <section id={id}>
       <Titulo>Certificados</Titulo>
       <Swiper
-        modules={[]}
         spaceBetween={50}
         slidesPerView={1}
         pagination={{ clickable: true}}
         navigation
       >
         {certificatesList.map((item) => (
-          <SwiperSlide key={item.id}>
-            <Areaa>
+          <SwiperSlide key={item.id} >
+            <ContentSlide>
               <h3>{item.title}</h3>
               <ImgSlide onClick={() => handleClick(item.id)} src={`/assets/img/certificates/${item.image}`} alt=""/>
-            </Areaa>
+            </ContentSlide>
           </SwiperSlide>
         ))}
       </Swiper>

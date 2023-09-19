@@ -13,7 +13,7 @@ export const projectList: Project[] = [
   {
     id: 2,
     thumbnail: 'thumbnail-quiz.png',
-    urlGithub: 'https://github.com/rennanveras/quiz-bandeiras',
+    urlGithub: 'https://quiz-bandeiras-rennan.vercel.app',
     urlProjeto: 'quiz-bandeiras-rennan.vercel.app',
     title: 'Quiz bandeiras',
     desc: 'lalalalal2',
