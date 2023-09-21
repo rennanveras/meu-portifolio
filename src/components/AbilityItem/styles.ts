@@ -45,9 +45,6 @@ export const CardAbility = styled.div`
   0% {
     background:  transparent ; /* Mantém a cor de fundo original */
   }
-  35% {
-    background:  linear-gradient(145deg, #8ec5ff, #2d70ff);
-  }
   60% {
     background: linear-gradient(145deg, #4fb4ff, #044aee);
   }
