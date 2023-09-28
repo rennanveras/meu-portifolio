@@ -5,9 +5,9 @@ import Projects from './containers/Projects';
 import Ability from './containers/Ability';
 import Certificates from './containers/Certificate';
 import Contact from './containers/Contact';
+import Footer from './containers/footer';
 
 const Page = () => {
-  
   return (
     <>
       <EstiloGlobal />
@@ -21,6 +21,7 @@ const Page = () => {
           <Contact id="contact" />
         </main>
       </Container>
+      <Footer/>
 
       
     </>

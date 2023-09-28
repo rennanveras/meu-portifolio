@@ -11,6 +11,8 @@ type Props = {
 }
 
 const Projects = ({ id }: Props) => {
+
+
   const [showModal, setShowModal] = useState(false);
   const [projectSelected, setProjectSelected] = useState<Project | undefined>(undefined);
 

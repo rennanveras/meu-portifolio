@@ -33,7 +33,7 @@ const Contact = ({ id }: Props) => {
           </>
           <>
             <FormControl action="https://formsubmit.co/rennanhenriqueneves@gmail.com" method="POST">
-              <input type="hidden" name="_next" value="http://localhost:5173/succes.html" />
+              <input type="hidden" name="_next" value="https://portifolio-rennanveras.vercel.app/succes.html" />
               <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato em breve estarei retornando ps:Rennan Veras"/>
               <LabelForm htmlFor="nome">
                 Seu nome

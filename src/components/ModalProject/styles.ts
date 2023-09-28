@@ -139,3 +139,13 @@ justify-content: space-between;
   }
   
 `
+
+
+export const AreaDesc = styled.div`
+  margin-bottom: 10px;
+  
+  @media (max-width: 768px) {
+    overflow: scroll; 
+    height: 150px;
+  }
+`
