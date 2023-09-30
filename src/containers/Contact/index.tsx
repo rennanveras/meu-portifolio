@@ -33,8 +33,9 @@ const Contact = ({ id }: Props) => {
           </>
           <AreaForm>
             <FormControl action="https://formsubmit.co/rennanhenriqueneves@gmail.com" method="POST">
-              <input type="hidden" name="_next" value="https://portifolio-rennanveras.vercel.app/succes.html" />
+              <input type="hidden" name="_next" value="https://portifolio-rennanveras.vercel.app/success.html" />
               <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato em breve estarei retornando ps:Rennan Veras"/>
+              <input type="hidden" name="_captcha" value="false"/>
               <LabelForm htmlFor="nome">
                 Seu nome
                 <input name="nome" type="text" id="nome" required/>
