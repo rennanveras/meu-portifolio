@@ -14,8 +14,7 @@ import {
 } from 'react-icons/bi'
 import { FaLess } from 'react-icons/fa'
 import AbilityItem from '../../components/AbilityItem';
-import { ContentAbility } from './styles';
-import { AreaCardAbility } from '../../components/AbilityItem/styles';
+import { AreaCardAbility, ContentAbility } from './styles';
 import Titulo from '../../components/Titulo';
 import { useState } from 'react';
 import Button from '../../components/button';

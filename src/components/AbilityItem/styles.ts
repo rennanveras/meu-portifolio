@@ -1,10 +1,7 @@
 import styled from "styled-components";
+import { CardDefault } from "../Cards/styles";
 
-export const AreaCardAbility = styled.section`
-  text-align: center;
-`
-
-export const CardAbility = styled.div`
+export const CardAbility = styled(CardDefault)`
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -13,8 +10,8 @@ export const CardAbility = styled.div`
   gap: 10px;
   border: 1px solid #333;
   border-radius: 20px;
-  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
   transition: all ease-in 0.1s;
+  cursor: default;
 
   @media (max-width:1024px) {
     padding: 20px;

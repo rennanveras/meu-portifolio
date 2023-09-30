@@ -1,7 +1,7 @@
 
 import { RedeSocialList } from "../../components/RedeSocialList";
 import Titulo from "../../components/Titulo";
-import { AreaContact, BtnContact, CardContact, FormControl, LabelForm } from "./styles";
+import { AreaContact, AreaForm, BtnContact, CardContact, FormControl, LabelForm } from "./styles";
 
 type Props = {
   id: string;
@@ -31,7 +31,7 @@ const Contact = ({ id }: Props) => {
               </div>
             </CardContact>
           </>
-          <>
+          <AreaForm>
             <FormControl action="https://formsubmit.co/rennanhenriqueneves@gmail.com" method="POST">
               <input type="hidden" name="_next" value="https://portifolio-rennanveras.vercel.app/succes.html" />
               <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato em breve estarei retornando ps:Rennan Veras"/>
@@ -53,7 +53,7 @@ const Contact = ({ id }: Props) => {
               </LabelForm>
               <BtnContact type="submit">Envias</BtnContact>
             </FormControl>
-          </>
+          </AreaForm>
         </AreaContact>
       </section>
     </>

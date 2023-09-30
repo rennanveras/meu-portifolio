@@ -1,5 +1,5 @@
 import { Project } from "../../types/Project";
-import { CardProject } from "./styles";
+import { CardProject, Thumbnail } from "./styles";
 
 type Props = {
   project: Project;
@@ -9,9 +9,9 @@ type Props = {
 export const ProjectItem = ({project, openModal}: Props) => {
   return (
     <CardProject onClick={openModal}>
-      <div className="thumbnail">
+      <Thumbnail>
         <img src={`/assets/img/thumbs/${project.thumbnail}`} alt="" />
-      </div>
+      </Thumbnail>
       <h5>{project.tech}</h5>
       <h3>{project.title}</h3>
     </CardProject>

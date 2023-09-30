@@ -31,32 +31,61 @@ export const Modal = styled.div`
   @media (max-width: 1024px) {
     width: 80%;
   }
-  .areaClose{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    margin-right: 30px;
-    
-    svg {
-      padding: 8px 0;
-      cursor: pointer;
-      margin-right: -10px;
-      margin-top: 6px;
-    }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 20px 10px;
+    padding-top: 0;
+  }
+  
+`
+
+export const AreaClose = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-right: 30px;
+  
+  svg {
+    padding: 8px 0;
+    cursor: pointer;
+    margin-right: -10px;
+    margin-top: 6px;
+  }
+  
+`
+
+
+export const ContentModal = styled.div`
+  display:flex ;
+  gap: 20px;
+  justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    display: block;
   }
 `
 
-export const ContentModal = styled.div`
-display:flex ;
-gap: 20px;
-justify-content: space-between;
+export const AreaInfo = styled.div`
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+`
 
-@media (max-width: 1024px) {
-  display: block;
-}
-
-.content-image {
+export const ContentImg = styled.div`
   width: 60%;
+
+  img {
+      width: 100%;
+      max-height:300px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 1px solid #ccc
+  }
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -67,77 +96,62 @@ justify-content: space-between;
         border-radius: 20px;
     }
   }
-  img {
-      width: 100%;
-      max-height:300px;
-      object-fit: cover;
-      border-radius: 20px;
+`
+
+export const ContentDesc = styled.div`
+  h5 {
+      color: #9a9a9a;
+    }
+
+    h3 {
+      font-size: 34px;
+      font-weight: bold;
+      margin-bottom: 14px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+` 
+
+export const ContentButtons = styled.div`
+  display: flex;
+  gap: 10px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
   }
-}
-  .area-info{
-    width: 40%;
-    display: flex;
+
+  @media (max-width: 480px) {
     flex-direction: column;
-    justify-content: space-between;
-    @media (max-width: 1024px) {
-      width: 100%;
-    }
-
-      .content-desc {
-      h5 {
-        color: #9a9a9a;
-      }
-
-      h3 {
-        font-size: 34px;
-        font-weight: bold;
-        margin-bottom: 14px;
-      }
-      p {
-        margin-bottom: 20px;
-      }
-    }
-    .content-buttons {
-        display: flex;
-        gap: 10px;
-
-        @media (max-width: 1024px) {
-          width: 100%;
-          justify-content: center;
-          gap: 14px;
-        }
-
-        @media (max-width: 480px) {
-          flex-direction: column;
-        }
-        a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border: none;
-          background: #e2e8ec;
-          background:linear-gradient(145deg, #e2e8ec, #ffffff);
-          box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-          color: #044aee;
-          width: 150px;
-          height: 60px;
-          padding: 0 4px;
-          cursor: pointer;
-          transition: all ease-in .1s;
-          border-radius: 10px;
-
-          @media (max-width: 480px) {
-            margin: 0;
-            width: 100%;
-            height: 44px;
-          }
-          &:hover{
-            transform: scale(1.03);
-          }
-        }
-      }
   }
-  
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #e2e8ec;
+    background:linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    color: #044aee;
+    width: 150px;
+    height: 60px;
+    padding: 0 4px;
+    cursor: pointer;
+    transition: all ease-in .1s;
+    border-radius: 10px;
+
+    @media (max-width: 480px) {
+      margin: 0;
+      width: 100%;
+      height: 44px;
+    }
+    &:hover{
+      transform: scale(1.03);
+    }
+  }
+      
 `
 
 

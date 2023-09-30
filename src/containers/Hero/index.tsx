@@ -1,6 +1,6 @@
 
 import HeroLeft from '../../components/HeroLeft';
-import foto from '../../../public/assets/img/hero.png'
+import foto from '/assets/img/hero.png'
 import HeroStyled, {  HeroRight } from './styles';
 
 

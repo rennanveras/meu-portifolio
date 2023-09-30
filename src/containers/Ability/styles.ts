@@ -11,5 +11,8 @@ export const  ContentAbility = styled.div`
     grid-template-columns:repeat(2 ,  1fr );
   }
 
-  
+`
+
+export const AreaCardAbility = styled.section`
+  text-align: center;
 `

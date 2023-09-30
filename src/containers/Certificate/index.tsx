@@ -37,7 +37,7 @@ const Certificates = ({ id }: Props) => {
           <SwiperSlide key={item.id} >
             <ContentSlide>
               <h3>{item.title}</h3>
-              <ImgSlide onClick={() => handleClick(item.id)} src={`/assets/img/certificates/${item.image}`} alt=""/>
+              <ImgSlide onClick={() => handleClick(item.id)} src={`../../assets/img/certificates/${item.image}`} alt=""/>
             </ContentSlide>
           </SwiperSlide>
         ))}

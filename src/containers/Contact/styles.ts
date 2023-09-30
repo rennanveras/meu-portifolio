@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { BtnDefault } from "../../components/button/styles";
+import { CardDefault } from "../../components/Cards/styles";
 
 export const AreaContact = styled.div`
   display: flex;
@@ -10,19 +11,16 @@ export const AreaContact = styled.div`
     flex-direction: column;
   }
 `
-export const CardContact = styled.div`
+export const CardContact = styled(CardDefault)`
 display: flex;
 flex-direction: column;
-  background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-  padding: 30px;
-  width: 40%;
-  border-radius: 20px;
-  justify-content: space-between;
+width: 40%;
+border-radius: 20px;
+justify-content: space-between;
 
   @media (max-width: 768px) {
     width: 100%;
-    padding: 10px;
+    padding: 20px 10px;
   }
 
   img {
@@ -30,24 +28,24 @@ flex-direction: column;
     object-fit: cover;
     border-radius: 20px;
   }
+`
 
-  
+
+export const AreaForm = styled(CardDefault)`
+  width: 60%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 20px 10px;
+  }
 `
 
 export const FormControl = styled.form`
   display: flex;
   flex-direction: column;
-  background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-  padding: 30px;
   border-radius: 10px;
-  width: 60%;
   gap: 14px;
 
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 10px;
-  }
 ` 
 
 export const LabelForm = styled.label`
