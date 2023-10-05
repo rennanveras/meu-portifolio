@@ -1,5 +1,5 @@
 import { Project } from "../../types/Project";
-import { AreaClose, AreaDesc, AreaInfo, BackgroundModal, ContentButtons, ContentDesc, ContentImg, ContentModal, Modal } from "./styles";
+import { AreaClose, AreaDesc, AreaInfo, BackgroundModal, ContentButtons, ContentDesc, ContentImg, ContentModal, Modal, ButtonModal } from "./styles";
 import { GrClose } from 'react-icons/gr'
 type Props = {
   projectSelected: Project;
@@ -16,7 +16,7 @@ export const ModalProject = ({ projectSelected, closeModal }: Props) => {
       <BackgroundModal onClick={closeModal}>
         <Modal>
           <AreaClose>
-            <GrClose onClick={closeModal} size="38" />
+            <span onClick={closeModal}></span>
           </AreaClose>
           <ContentModal>           
             <ContentImg>
@@ -33,8 +33,8 @@ export const ModalProject = ({ projectSelected, closeModal }: Props) => {
                 </AreaDesc>
               </ContentDesc>
               <ContentButtons>
-                <a target="_blank" href={projectSelected.urlProjeto}>Visitar Projeto</a>
-                <a target="_blank" href={projectSelected.urlGithub}>Ver o código</a>
+                <ButtonModal target="_blank" href={projectSelected.urlProjeto}>Visitar Projeto</ButtonModal>
+                <ButtonModal target="_blank" href={projectSelected.urlGithub}>Ver o código</ButtonModal>
               </ContentButtons>
             </AreaInfo>
           </ContentModal>

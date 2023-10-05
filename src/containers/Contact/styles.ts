@@ -53,7 +53,7 @@ export const LabelForm = styled.label`
   flex-direction: column;
   text-transform:uppercase;
   font-size: 14px;
-  color: #3c3e41;
+  color:  ${props => props.theme.textColorSegundary};
   input {
     height: 46px;
 
@@ -64,17 +64,26 @@ export const LabelForm = styled.label`
   }
   input, textarea {
     font-size: 16px;
-    background-color: #fdfefe;
-    border: 2px solid #dadada;
+    border: 2px solid  ${props => props.theme.colorSegundary};
     box-shadow: none;
-    color: #3c3e41;
+    color: ${props => props.theme.textColorSegundary};
     border-radius: 5px;
     padding: 6px;
-    outline-color: #044aee;
+    outline-color: ${props => props.theme.colorPrimary};
     width: 100%;
   }
 `
 export const BtnContact = styled(BtnDefault)`
   width: 100%;
 
+`
+
+export const AlertInput = styled.span`
+  color: red;
+  text-transform: lowercase;
+  font-size: 14px;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
 `

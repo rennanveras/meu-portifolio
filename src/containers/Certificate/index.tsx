@@ -32,6 +32,7 @@ const Certificates = ({ id }: Props) => {
         slidesPerView={1}
         pagination={{ clickable: true}}
         navigation
+        
       >
         {certificatesList.map((item) => (
           <SwiperSlide key={item.id} >

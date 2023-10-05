@@ -5,12 +5,14 @@ export const ContentSlide = styled.div`
   display: flex;
   justify-content: center;
   padding-bottom: 24px;
+  margin-bottom: 20px;
   flex-direction: column;
   align-items:center;
 
   h3 {
     font-size: 22px;
     margin: 10px 0;
+    font-weight: bold;
     @media (max-width: 768px){
       font-size: 18px;
 

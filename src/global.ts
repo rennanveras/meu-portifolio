@@ -8,14 +8,19 @@ const EstiloGlobal = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
+    color: ${props => props.theme.textColorPrimary};
   }
   
   body {
-    background-color: #ecf0f3;
+    background-color: ${props => props.theme.backgroundColor};
   }
 
   .fontMontserrat{
     font-family: 'Montserrat', sans-serif;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: ${props => props.theme.textColorPrimary};
   }
 `
 export default EstiloGlobal;

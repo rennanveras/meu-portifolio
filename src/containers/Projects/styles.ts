@@ -30,7 +30,7 @@ export const ListProjects = styled.ul`
   
   h5 {
     font-size: 12px;
-    color: #9a9a9a;
+    color: ${props => props.theme.gray};
   }
 `
 

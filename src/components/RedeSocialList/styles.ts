@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const RedeSocialStyles = styled.ul`
   display: flex;
   gap: 14px;
-  
+  margin-top: 10px;
   a {
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    box-shadow: 5px 5px 15px ${props => props.theme.boxShadowPrimary}, -5px -5px 15px ${props => props.theme.boxShadowSegundary};
     border-radius: 6px;
     max-width: 60px;
     height: 45px;
@@ -15,8 +15,8 @@ export const RedeSocialStyles = styled.ul`
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
-    background: #4fb4ff;
-    background: linear-gradient(145deg, #4fb4ff, #044aee);
+    background: ${props => props.theme.colorPrimary};
+    background: linear-gradient(145deg, ${props => props.theme.colorTertiary}, ${props => props.theme.colorPrimary});
     cursor: pointer;
 
     &:hover {
@@ -25,7 +25,10 @@ export const RedeSocialStyles = styled.ul`
     
     svg {
       font-size: 30px;
-      color: white
+
+      path {
+        color: ${props => props.theme.white};
+      }
     }
   }
       

@@ -5,8 +5,8 @@ export const FooterContainer = styled.footer`
   background-color: transparent;
   text-align: center;
   padding: 30px ;
-  color: #3c3e41;
-  border-top: 1px solid #e0e0e0;
+  color: ${props => props.theme.textColorSegundary};
+  border-top: 1px solid ${props => props.theme.colorSegundary};
 
 
   @media (max-width: 768px) {

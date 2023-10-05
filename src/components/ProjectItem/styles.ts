@@ -9,7 +9,7 @@ export const CardProject = styled(CardDefault)`
           
         }
       h3 {
-        color: #044aee;
+        color: ${props => props.theme.colorPrimary};
       }
     }
 `

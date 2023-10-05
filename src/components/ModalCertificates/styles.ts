@@ -6,7 +6,7 @@ export const AreaModalCertificate = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(236,240,243, .8);
+  background-color: ${props => props.theme.backgroundModal};
   z-index: 999;
   display: flex;
   align-items: center;

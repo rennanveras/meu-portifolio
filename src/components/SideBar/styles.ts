@@ -15,7 +15,7 @@ export const Background = styled.div`
 `
 
 export const Container = styled.aside<ContainerProps>`
-  background-color: #1269eb;
+  background-color: ${props => props.theme.colorPrimary};
   position: fixed;
   height: 100%;
   top: 0px;

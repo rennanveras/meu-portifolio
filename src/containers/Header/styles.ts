@@ -6,9 +6,9 @@ export const Header = styled.header`
   top: 0;
   left: 0;
   position: sticky;
-  background-color: #ecf0f3;
+  background-color: ${props => props.theme.backgroundColor};
   z-index: 997;
-  box-shadow: 10px 10px 19px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 19px ${props => props.theme.boxShadowPrimary};
   
   h1 {
     text-transform: uppercase;
@@ -38,10 +38,11 @@ export const NavBar = styled.nav`
       
       a {
         display: block;
-        color: #000;
+        color: ${props => props.theme.textColorPrimary};
         text-transform: uppercase;
         transition: opacity ease-in .2s;
         font-size: 18px;
+        cursor: pointer;
 
         &:hover {
           opacity: 0.6;

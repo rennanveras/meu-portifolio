@@ -20,7 +20,7 @@ export const HeroLeftStyles = styled.div`
         }
 
         span {
-          color: #044aee;
+          color: ${props => props.theme.colorPrimary};
         }
 
         .skills {

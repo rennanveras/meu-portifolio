@@ -8,7 +8,7 @@ export const CardAbility = styled(CardDefault)`
   align-items: center;
   font-size: 18px;
   gap: 10px;
-  border: 1px solid #333;
+  border: 1px solid ${props => props.theme.textColorSegundary};
   border-radius: 20px;
   transition: all ease-in 0.1s;
   cursor: default;
@@ -43,10 +43,10 @@ export const CardAbility = styled(CardDefault)`
     background:  transparent ; /* Mantém a cor de fundo original */
   }
   60% {
-    background: linear-gradient(145deg, #4fb4ff, #044aee);
+    background: linear-gradient(145deg, ${props => props.theme.colorTertiary}, ${props => props.theme.colorPrimary});
   }
   100% {
-    background: linear-gradient(145deg, #4fb4ff, #044aee);
+    background: linear-gradient(145deg, ${props => props.theme.colorTertiary}, ${props => props.theme.colorPrimary});
   }
 }
 `

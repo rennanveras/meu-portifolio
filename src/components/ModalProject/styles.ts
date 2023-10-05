@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { CardDefault } from "../Cards/styles";
+import { BtnDefault } from "../button/styles";
 
 export const BackgroundModal = styled.div`
   position: fixed;
@@ -6,7 +8,7 @@ export const BackgroundModal = styled.div`
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-color: rgba(236,240,243, .8);
+  background-color: ${props => props.theme.backgroundModal};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +16,7 @@ export const BackgroundModal = styled.div`
   z-index: 999;
 `
 
-export const Modal = styled.div`
+export const Modal = styled(CardDefault)`
   display: flex;
   flex-direction: column;
   width: 1000px;
@@ -22,9 +24,6 @@ export const Modal = styled.div`
   border-radius: 20px;
   padding-bottom: 36px;
   z-index: 998;
-  background: #ecf0f3;
-  background: linear-gradient(145deg, #e2e8ec, #ffffff); 
-  box-shadow: 5px 5px 15px #ccc, -5px -5px 15px #555;
   padding: 30px;
   padding-top: 0;
   
@@ -47,12 +46,37 @@ export const AreaClose = styled.div`
   margin-right: 30px;
   
   svg {
+    color: ${props => props.theme.textColorPrimary};
     padding: 8px 0;
     cursor: pointer;
     margin-right: -10px;
     margin-top: 6px;
   }
-  
+
+  span {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 10px;
+
+    &:after {
+        content: '';
+        height: 30px;
+        border-left: 2px solid #fff;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 28px;
+    }
+
+    &:before {
+        content: '';
+        height: 30px;
+        border-left: 2px solid #fff;
+        position: absolute;
+        transform: rotate(-45deg);
+        left: 28px;
+    }
+  }
 `
 
 
@@ -84,7 +108,7 @@ export const ContentImg = styled.div`
       max-height:300px;
       object-fit: cover;
       border-radius: 20px;
-      border: 1px solid #ccc
+      border: 1px solid ${props => props.theme.gray};
   }
 
   @media (max-width: 1024px) {
@@ -100,7 +124,7 @@ export const ContentImg = styled.div`
 
 export const ContentDesc = styled.div`
   h5 {
-      color: #9a9a9a;
+      color: ${props => props.theme.gray};
     }
 
     h3 {
@@ -126,40 +150,17 @@ export const ContentButtons = styled.div`
   @media (max-width: 480px) {
     flex-direction: column;
   }
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background: #e2e8ec;
-    background:linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-    color: #044aee;
-    width: 150px;
-    height: 60px;
-    padding: 0 4px;
-    cursor: pointer;
-    transition: all ease-in .1s;
-    border-radius: 10px;
-
-    @media (max-width: 480px) {
-      margin: 0;
-      width: 100%;
-      height: 44px;
-    }
-    &:hover{
-      transform: scale(1.03);
-    }
-  }
-      
 `
 
+export const ButtonModal = styled(BtnDefault).attrs({ as: 'a'})`
+  margin-top: 0;
+`
 
 export const AreaDesc = styled.div`
   margin-bottom: 10px;
   
   @media (max-width: 768px) {
-    overflow: scroll; 
+    overflow-y: scroll; 
     height: 150px;
   }
 `
