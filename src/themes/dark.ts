@@ -1,5 +1,5 @@
 const themeDark = {
-  backgroundColor: '#101010',
+  backgroundColor: '#0a0a0a',
   backgroundModal: 'rgba(0,0,0, .8)',
   colorPrimary: '#044aee',
   colorSegundary: '#363636',
@@ -15,3 +15,19 @@ const themeDark = {
 }
 
 export default themeDark;
+
+export type Theme = {
+  backgroundColor: string
+  backgroundModal: string
+  colorPrimary: string
+  colorSegundary: string
+  colorTertiary: string
+  textColorPrimary: string
+  textColorSegundary: string
+  boxShadowPrimary: string
+  boxShadowSegundary: string
+  gray: string
+  white: string
+  colorModal1: string
+  colorModal2: string
+}

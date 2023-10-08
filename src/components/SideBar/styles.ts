@@ -23,14 +23,14 @@ export const Container = styled.aside<ContainerProps>`
   width: 300px;
   right: ${props => props.sidebar ? '0' : '-100%'};
   animation: showSidebar .4s;
+  padding: 0 14px;
 
   > svg {
     position: fixed;
     color: white;
     width: 30px;
     height: 30px;
-    margin-top: 32px;
-    margin-left: 32px;
+    margin-top: 14px;
     cursor: pointer;
   }
 
@@ -48,4 +48,13 @@ export const Container = styled.aside<ContainerProps>`
 
 export const Content = styled.div`
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;
+
+export const AreaButtonThemeSideBar = styled.div`
+  margin: 0 auto;
+  position: absolute;
+  bottom: 20px;
+`

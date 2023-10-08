@@ -6,7 +6,6 @@ const themeLight = {
   colorTertiary: '#4fb4ff',
   textColorPrimary: '#000000',
   textColorSegundary: '#3c3e41',
-  boxShadow: '',
   boxShadowPrimary: 'rgba(0, 0, 0, 0.1)',
   boxShadowSegundary: '#ffffff',
   gray: '#9a9a9a',

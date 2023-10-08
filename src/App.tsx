@@ -1,5 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 
+import { useState } from 'react'
 import EstiloGlobal, { Container } from './global';
 import Header from './containers/Header';
 import Hero from './containers/Hero';
@@ -12,10 +13,19 @@ import themeLight from './themes/light';
 import themeDark from './themes/dark';
 
 const Page = () => {
+  const [darkModeActive, setDarkModeActive] = useState(false);
+  const [iconTheme, setIconTheme] = useState(false)
+
+  const changeTheme = () => {
+    setDarkModeActive(!darkModeActive);
+    darkModeActive ? setIconTheme(true) : setIconTheme(false)
+
+  }
+
   return (
-    <ThemeProvider theme={themeDark}>
+    <ThemeProvider theme={darkModeActive ? themeDark : themeLight}>
       <EstiloGlobal />
-      <Header/>
+      <Header changeTheme={changeTheme} iconTheme={iconTheme}/>
       <Container>
         <main>
           <Hero id="hero" />

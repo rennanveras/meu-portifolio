@@ -1,5 +1,7 @@
 import { styled, createGlobalStyle } from 'styled-components';
 
+import { Theme } from './themes/dark';
+
 const EstiloGlobal = createGlobalStyle`
   *{
     margin: 0;
@@ -12,7 +14,7 @@ const EstiloGlobal = createGlobalStyle`
   }
   
   body {
-    background-color: ${props => props.theme.backgroundColor};
+    background-color: ${props => (props.theme as Theme).backgroundColor};
   }
 
   .fontMontserrat{

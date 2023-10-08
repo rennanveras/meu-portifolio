@@ -32,6 +32,7 @@ export const NavBar = styled.nav`
 
   ul {
     display: flex;
+    align-items: center;
     gap: 28px;
 
     li {
