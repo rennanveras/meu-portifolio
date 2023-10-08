@@ -18,8 +18,7 @@ const Page = () => {
 
   const changeTheme = () => {
     setDarkModeActive(!darkModeActive);
-    darkModeActive ? setIconTheme(true) : setIconTheme(false)
-
+    darkModeActive ? setIconTheme(false) : setIconTheme(true);
   }
 
   return (

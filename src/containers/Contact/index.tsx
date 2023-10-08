@@ -62,11 +62,6 @@ const Contact = ({ id }: Props) => {
             <FormControl action="https://formsubmit.co/rennanhenriqueneves@gmail.com" method="POST">
               <input 
                 type="hidden" 
-                name="_next" 
-                value="https://portifolio-rennanveras.vercel.app/success.html" 
-              />
-              <input 
-                type="hidden" 
                 name="_autoresponse" 
                 value="Obrigado por entrar em contato em breve estarei retornando ps:Rennan Veras"
               />

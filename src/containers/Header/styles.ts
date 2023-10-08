@@ -45,7 +45,7 @@ export const NavBar = styled.nav`
         font-size: 18px;
         cursor: pointer;
 
-        &:hover {
+        &:hover  {
           opacity: 0.6;
         }
       }

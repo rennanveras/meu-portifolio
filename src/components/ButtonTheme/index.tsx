@@ -9,7 +9,9 @@ type Props = {
 const ButtonTheme = ({ changeTheme, iconTheme }: Props) => {
   return (
     <>
-      <BtnTheme onClick={changeTheme}>{iconTheme ? <BsMoonStarsFill/> : <BsFillSunFill />}</BtnTheme>
+      <BtnTheme onClick={changeTheme}>
+        {iconTheme ? <BsFillSunFill /> : <BsMoonStarsFill/>}
+      </BtnTheme>
     </>
   );
 }
