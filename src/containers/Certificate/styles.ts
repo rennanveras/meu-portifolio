@@ -23,4 +23,6 @@ export const ImgSlide = styled.img`
   width: 100%;
   object-fit: contain;
   max-height: 600px;
+  text-align: center;
+  padding: 20px 0;
 `

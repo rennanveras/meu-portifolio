@@ -20,7 +20,7 @@ export const ModalProject = ({ projectSelected, closeModal }: Props) => {
           <ContentModal>           
             <ContentImg>
               <a target="_blank" href={projectSelected.urlProjeto}>
-                <img src={`/assets/img/thumbs/${projectSelected.thumbnail}`} alt="" />
+                <img src={`/assets/img/thumbs/${projectSelected.thumbnail}`} alt="Foto do projeto" />
               </a>
             </ContentImg>
             <AreaInfo>

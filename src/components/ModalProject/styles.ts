@@ -59,10 +59,11 @@ export const AreaClose = styled.div`
     position: relative;
     margin: 10px;
 
+
     &:after {
         content: '';
         height: 30px;
-        border-left: 2px solid #fff;
+        border-left: 2px solid ${props => props.theme.textColorPrimary};
         position: absolute;
         transform: rotate(45deg);
         left: 28px;
@@ -71,7 +72,7 @@ export const AreaClose = styled.div`
     &:before {
         content: '';
         height: 30px;
-        border-left: 2px solid #fff;
+        border-left: 2px solid ${props => props.theme.textColorPrimary};
         position: absolute;
         transform: rotate(-45deg);
         left: 28px;

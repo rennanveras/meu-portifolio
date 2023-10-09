@@ -13,7 +13,7 @@ const Hero = ({ id }: Props) => {
     <HeroStyled id={id}>
       <HeroLeft />
       <HeroRight>
-        <img src={foto} alt="" />
+        <img src={foto} alt="Foto de Rennan com uma camiseta azul e óculos, e o fundo transparente" />
       </HeroRight>
     </HeroStyled>
   );

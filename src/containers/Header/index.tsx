@@ -8,7 +8,7 @@ type Props = {
 }
 
 const Header = ({ changeTheme, iconTheme }: Props) => {
-  
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {

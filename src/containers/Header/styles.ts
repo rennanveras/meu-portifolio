@@ -14,6 +14,7 @@ export const Header = styled.header`
     text-transform: uppercase;
     font-size: 22px;
     font-weight: normal;
+    cursor: default;
   }
 `
 
@@ -36,7 +37,6 @@ export const NavBar = styled.nav`
     gap: 28px;
 
     li {
-      
       a {
         display: block;
         color: ${props => props.theme.textColorPrimary};

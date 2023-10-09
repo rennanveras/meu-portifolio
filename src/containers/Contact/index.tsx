@@ -43,7 +43,7 @@ const Contact = ({ id }: Props) => {
           <>
             <CardContact>
               <div>
-                <img src="https://cdn.pixabay.com/photo/2018/05/08/08/42/virtual-coworkers-3382503_1280.jpg" alt="" />
+                <img src="https://cdn.pixabay.com/photo/2018/05/08/08/42/virtual-coworkers-3382503_1280.jpg" alt="Foto de 2 pessoa pessoa fechando négocio online" />
                 <>
                   <h2>Rennan Veras</h2>
                   <p>Desenvolver Front-End</p>
