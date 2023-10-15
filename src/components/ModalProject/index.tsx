@@ -1,6 +1,5 @@
 import { Project } from "../../types/Project";
 import { AreaClose, AreaDesc, AreaInfo, BackgroundModal, ContentButtons, ContentDesc, ContentImg, ContentModal, Modal, ButtonModal } from "./styles";
-import { AiOutlineClose } from 'react-icons/ai'
 type Props = {
   projectSelected: Project;
   closeModal: (e: React.MouseEvent) => void;
