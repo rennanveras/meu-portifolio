@@ -45,39 +45,22 @@ export const AreaClose = styled.div`
   justify-content: end;
   margin-right: 30px;
   
-  svg {
-    color: ${props => props.theme.textColorPrimary};
-    padding: 8px 0;
-    cursor: pointer;
-    margin-right: -10px;
-    margin-top: 6px;
-  }
+  .button-closeModal {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  span {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    margin: 10px;
-
-
-    &:after {
-        content: '';
-        height: 30px;
-        border-left: 2px solid ${props => props.theme.textColorPrimary};
-        position: absolute;
-        transform: rotate(45deg);
-        left: 28px;
-    }
-
-    &:before {
-        content: '';
-        height: 30px;
-        border-left: 2px solid ${props => props.theme.textColorPrimary};
-        position: absolute;
-        transform: rotate(-45deg);
-        left: 28px;
+    &:hover {
+      background-color: ${props => props.theme.boxShadowPrimary};
     }
   }
+
 `
 
 
