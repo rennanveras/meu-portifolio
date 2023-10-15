@@ -1,24 +1,27 @@
-import { RedeSocialStyles } from "./styles";
+import * as S from "./styles";
 import { AiOutlineMail, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 export const RedeSocialList = () => {
   return (
-    <RedeSocialStyles>
+    <S.RedeSocialStyles>
       <li>
-        <a href="https://www.linkedin.com/in/rennan-veras/" target='_blank'>
+        <S.BtnRedeSocial href="https://www.linkedin.com/in/rennan-veras/" target='_blank'>
           <AiFillLinkedin />
-        </a>
+        </S.BtnRedeSocial>
       </li>
       <li>
-        <a href="https://github.com/rennanveras" target='_blank'>        
+        <S.BtnRedeSocial href="https://github.com/rennanveras" target='_blank'>        
           <AiFillGithub />
-        </a>
+        </S.BtnRedeSocial>
       </li>
       <li>
-        <a href="mailto:rennanhenriqueneves@gmail.com" target='_blank'>
+        <S.BtnRedeSocial href="mailto:rennanhenriqueneves@gmail.com" target='_blank'>
           <AiOutlineMail/>
-        </a>
+        </S.BtnRedeSocial>
       </li>
-    </RedeSocialStyles>
+      <li className="cv">
+        <S.BtnCv href="/assets/curriculo.pdf" download>Baixar CV</S.BtnCv>
+      </li>
+    </S.RedeSocialStyles>
   );
 }

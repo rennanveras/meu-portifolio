@@ -34,7 +34,7 @@ const HeroLeft = () => {
   return (
     <HeroLeftStyles className='hero-left'>
         <div className='hero-left-description'>
-          <h3>Conheça mais sobre mim!</h3>
+          <h3>Conheça mais sobre mim!</h3>   
           <h2>
             Olá, Eu sou o <span className=''>Rennan Veras</span>
           </h2>

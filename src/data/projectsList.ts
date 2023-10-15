@@ -24,7 +24,7 @@ export const projectList: Project[] = [
     thumbnail: 'thumbnail-neves.png',
     urlGithub: 'https://github.com/rennanveras/landigpage-pai_2.0',
     urlProjeto: 'https://landigpage-pai-2-0.vercel.app',
-    title: 'Landing page pai',
+    title: 'Landing Page Neves',
     desc: 'Este projeto foi o mais significativo para mim até hoje, pois foi desenvolvido para o meu pai. Isso me motivou a realizá-lo com um cuidado especial, o que, por sua vez, aprimorou minha habilidade de comunicação com o cliente, ajudando-me a compreender melhor os requisitos e preferências das pessoas.',
     tech: 'Bootstrap - Sass - Gulp - JavaScript'},
   {
@@ -39,12 +39,12 @@ export const projectList: Project[] = [
 
   {
     id: 5,
-    thumbnail: 'thumbnail-aniversario.png',
-    urlGithub: 'https://github.com/rennanveras/evento-aniversario',
-    urlProjeto: 'https://evento-aniversario-five.vercel.app',
-    title: 'Evento de aniversário ',
+    thumbnail: 'thumbnail-bella-russo.png',
+    urlGithub: 'https://github.com/rennanveras/Bella-Russo-Pizzaria',
+    urlProjeto: 'https://pizzaria-bootstrap.vercel.app',
+    title: 'Pizzaria Bella Russo ',
     desc: 'Este é um evento fictício de aniversário à fantasia, acompanhado de um cronômetro regressivo até a data do evento. O projeto inclui animações na descrição do evento, proporcionando uma experiência interativa e envolvente para os participantes',
-    tech: 'HTML - Sass - JavaScript'
+    tech: 'HTML - Gulp - Bootstrap - Sass - Jquery'
   },
 
   {
@@ -54,6 +54,6 @@ export const projectList: Project[] = [
     urlProjeto: 'https://search-github-lyart.vercel.app',
     title: 'Procure o seu github',
     desc: 'Este projeto consiste em um sistema para buscar perfis do GitHub e exibir seus repositórios. Durante o desenvolvimento, pude aprimorar minhas habilidades em React, principalmente no uso de APIs.',
-    tech: ' ReactJs - CSS'
+    tech: ' ReactJs - Styled Components'
   }
   ];

@@ -28,6 +28,9 @@ export const CardAbility = styled(CardDefault)`
   &:hover {
     animation: hoverAnimation 0.5s forwards;
     color: white;
+    path {
+      color: white;
+    }
   }
 
   svg {
