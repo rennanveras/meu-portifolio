@@ -1,6 +1,10 @@
 import ButtonTheme from '../../components/ButtonTheme';
 import { MenuMobile } from '../../components/MenuMobile';
+
 import { ContainerHeader, Header as HeaderStyle, NavBar } from './styles'
+
+import logo from '../../../public/assets/img/logo.png'
+
 
 type Props = {
   changeTheme: () => void;
@@ -24,7 +28,7 @@ const Header = ({ changeTheme, iconTheme }: Props) => {
   return (
     <HeaderStyle className="container">
         <ContainerHeader>
-          <h1>Rennan Veras</h1>
+          <h1><img src={logo} alt="" /></h1>
           <MenuMobile changeTheme={changeTheme} iconTheme={iconTheme} />
           <NavBar>
             <ul>

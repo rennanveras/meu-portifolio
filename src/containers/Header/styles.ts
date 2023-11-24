@@ -15,6 +15,10 @@ export const Header = styled.header`
     font-size: 22px;
     font-weight: normal;
     cursor: default;
+
+    img {
+      height: 80px;
+    }
   }
 `
 

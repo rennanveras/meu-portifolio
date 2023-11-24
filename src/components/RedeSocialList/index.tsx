@@ -20,7 +20,7 @@ export const RedeSocialList = () => {
         </S.BtnRedeSocial>
       </li>
       <li className="cv">
-        <S.BtnCv href="/assets/curriculo.pdf" download>Baixar CV</S.BtnCv>
+        <S.BtnCv href="/assets/curriculo-rennan.pdf" download>Baixar CV</S.BtnCv>
       </li>
     </S.RedeSocialStyles>
   );

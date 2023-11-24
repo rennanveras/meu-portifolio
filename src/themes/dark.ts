@@ -1,9 +1,9 @@
 const themeDark = {
   backgroundColor: '#0a0a0a',
   backgroundModal: 'rgba(0,0,0, .8)',
-  colorPrimary: '#044aee',
+  colorPrimary: '#0ab1ad',
   colorSegundary: '#363636',
-  colorTertiary: '#4fb4ff',
+  colorTertiary: '#075755',
   textColorPrimary: '#EEEEEE',
   textColorSegundary: '#A7A6A6',
   boxShadowPrimary: 'rgba(220, 220, 220, 0.1)',

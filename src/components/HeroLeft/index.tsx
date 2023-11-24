@@ -38,7 +38,7 @@ const HeroLeft = () => {
           <h2>
             Olá, Eu sou o <span className=''>Rennan Veras</span>
           </h2>
-          <p>Tenho {age} anos e estou em busca contínua de aprofundar meu conhecimento na área de programação, enquanto curso Análise e Desenvolvimento de Sistemas. O interesse pela programação surgiu a partir do meu envolvimento com jogos, e desde então, tenho me dedicado incansavelmente a estudar e aprimorar minhas habilidades em algo que verdadeiramente me apaixona. Estou comprometido com o aprendizado constante e ansioso para explorar ainda mais as emocionantes possibilidades que o mundo da programação tem a oferecer</p>
+          <p>Tenho {age} anos,  sou frelancer e estudante de Análise e Desenvolvimento de Sistemas. Minha paixão pela programação nasceu do envolvimento com jogos, e tenho me dedicado intensamente para aprimorar minhas habilidades. Estou aberto a novos desafios e prontamente disponível para fechar negócios. Se precisar de serviços de programação, é só me chamar. Estou ansioso para contribuir com meu conhecimento em projetos interessantes..</p>
         </div>
         <div className='hero-left-redeSocial'>
           <h3>Onde me encrontrar</h3>

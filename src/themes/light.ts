@@ -1,7 +1,7 @@
 const themeLight = {
   backgroundColor: '#ecf0f3',
   backgroundModal: 'rgba(236,240,243, .8)',
-  colorPrimary: '#044aee',
+  colorPrimary: '#0ab1ad',
   colorSegundary: '#D1D9E6',
   colorTertiary: '#4fb4ff',
   textColorPrimary: '#000000',
