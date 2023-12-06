@@ -3,7 +3,8 @@ import { MenuMobile } from '../../components/MenuMobile';
 
 import { ContainerHeader, Header as HeaderStyle, NavBar } from './styles'
 
-import logo from '../../../public/assets/img/logo.png'
+import logoWhite from '../../../public/assets/img/logo-white.webp'
+import logoDark from '../../../public/assets/img/logo-dark.webp'
 
 
 type Props = {
@@ -28,7 +29,7 @@ const Header = ({ changeTheme, iconTheme }: Props) => {
   return (
     <HeaderStyle className="container">
         <ContainerHeader>
-          <h1><img src={logo} alt="" /></h1>
+          <h1><img src={iconTheme ?  logoWhite : logoDark} alt="" /></h1>
           <MenuMobile changeTheme={changeTheme} iconTheme={iconTheme} />
           <NavBar>
             <ul>

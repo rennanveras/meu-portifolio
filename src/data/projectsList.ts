@@ -26,7 +26,8 @@ export const projectList: Project[] = [
     urlProjeto: 'https://landigpage-pai-2-0.vercel.app',
     title: 'Landing Page Neves',
     desc: 'Este projeto foi o mais significativo para mim até hoje, pois foi desenvolvido para o meu pai. Isso me motivou a realizá-lo com um cuidado especial, o que, por sua vez, aprimorou minha habilidade de comunicação com o cliente, ajudando-me a compreender melhor os requisitos e preferências das pessoas.',
-    tech: 'Bootstrap - Sass - Gulp - JavaScript'},
+    tech: 'Bootstrap - Sass - Gulp - JavaScript'
+  },
   {
     id: 4,
     thumbnail: 'thumbnail-evento.png',
@@ -58,7 +59,7 @@ export const projectList: Project[] = [
     id: 7,
     thumbnail: 'thumbnail-medicenter.png',
     urlGithub: 'https://github.com/rennanveras/page_medicenter',
-    urlProjeto: 'page-medicenter.vercel.app',
+    urlProjeto: 'https://page-medicenter-9gdeut4q7-rennanveras.vercel.app',
     title: 'Medicenter',
     desc: 'Bem-vindo à nossa plataforma dedicada à apresentação e informações do Hospital Medicenter. Nossa landing page oferece uma visão acolhedora e informativa sobre os serviços e valores que nos definem como uma instituição de saúde comprometida.',
     tech: ' HTML - CSS'

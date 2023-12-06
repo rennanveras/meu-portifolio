@@ -3,7 +3,7 @@ const themeLight = {
   backgroundModal: 'rgba(236,240,243, .8)',
   colorPrimary: '#0ab1ad',
   colorSegundary: '#D1D9E6',
-  colorTertiary: '#4fb4ff',
+  colorTertiary: '#006d77',
   textColorPrimary: '#000000',
   textColorSegundary: '#3c3e41',
   boxShadowPrimary: 'rgba(0, 0, 0, 0.1)',
