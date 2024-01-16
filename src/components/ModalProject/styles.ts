@@ -48,13 +48,14 @@ export const AreaClose = styled.div`
   .button-closeModal {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 40px;
-    height: 40px;
+    padding: 10px;
+    object-fit: contain;
     border-radius: 50%;
     font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .2s ease-in;
 
     &:hover {
       background-color: ${props => props.theme.boxShadowPrimary};
