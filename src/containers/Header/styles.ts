@@ -27,6 +27,12 @@ export const ContainerHeader = styled(Container)`
   align-items: center;
   justify-content: space-between;
   height: 96px;
+
+  .contentBtnTheme {
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
 `
 
 

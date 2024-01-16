@@ -17,6 +17,19 @@ export const ContainerProject = styled.section`
       padding: 0;
     }
   }
+
+  .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  max-width: 600px;
+  width: 100%;
+}
 `
 
 export const ListProjects = styled.ul`

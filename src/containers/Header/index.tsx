@@ -26,34 +26,47 @@ const Header = ({ changeTheme, iconTheme }: Props) => {
     }
   };
 
+  const itensNav = [
+    {
+      id: 'hero',
+      label: 'Home'
+    },
+    {
+      id: 'projects',
+      label: 'Projetos'
+    },
+    {
+      id: 'ability',
+      label: 'Habilidades'
+    },
+    {
+      id: 'certificates',
+      label: 'Certificados'
+    },
+    {
+      id: 'contact',
+      label: 'Contato'
+    }
+  ];
+
   return (
     <HeaderStyle className="container">
-        <ContainerHeader>
-          <h1><img src={iconTheme ?  logoWhite : logoDark} alt="" /></h1>
-          <MenuMobile changeTheme={changeTheme} iconTheme={iconTheme} />
-          <NavBar>
-            <ul>
+      <ContainerHeader>
+        <h1><img src={iconTheme ? logoWhite : logoDark} alt="" /></h1>
+        <MenuMobile changeTheme={changeTheme} iconTheme={iconTheme} />
+        <NavBar>
+          <ul>
+            {itensNav.map((item) => (
               <li>
-                <a onClick={() => scrollToSection('hero')}>Home</a>
+                <a onClick={() => scrollToSection(item.id)}>{item.label}</a>
               </li>
-              <li>
-                <a onClick={() => scrollToSection('projects')}>Projetos</a>
-              </li>
-              <li>
-                <a onClick={() => scrollToSection('ability')}>Habilidades</a>
-              </li>
-              <li>
-                <a onClick={() => scrollToSection('certificates')}>Certificados</a>
-              </li>
-              <li>
-                <a onClick={() => scrollToSection('contact')}>Contato</a>
-              </li>
-              <li>
-                <ButtonTheme changeTheme={changeTheme} iconTheme={iconTheme} />
-              </li>
-            </ul>
-          </NavBar>
-        </ContainerHeader>
+            ))}
+          </ul>
+        </NavBar>
+        <div className='contentBtnTheme'>
+          <ButtonTheme changeTheme={changeTheme} iconTheme={iconTheme} />
+        </div>
+      </ContainerHeader>
     </HeaderStyle>
   );
 }

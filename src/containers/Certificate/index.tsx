@@ -1,7 +1,9 @@
-import {Swiper, SwiperSlide} from 'swiper/react'
-import { ContentSlide, ImgSlide } from './styles';
 import { useState } from 'react';
+import {Swiper, SwiperSlide} from 'swiper/react'
+
+import { ContentSlide, ImgSlide } from './styles';
 import { certificatesList } from '../../data/CertificatesList';
+
 import Titulo from '../../components/Titulo';
 import ModalCertificate from '../../components/ModalCertificates';
 

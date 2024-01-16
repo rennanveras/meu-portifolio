@@ -2,17 +2,18 @@ import { Project } from "../types/Project";
 
 export const projectList: Project[] = [
   {
-    id: 1, 
-    thumbnail: 'thumbnail-disney.png', 
-    urlGithub: 'https://github.com/rennanveras/landingpage_disneyplus',
-    urlProjeto: 'https://landingpage-disneyplus-2eta-h00equ8z8-rennanveras.vercel.app',
-    title: 'Clone Disney+', 
-    desc: 'Este projeto consiste em uma landing page inspirada no design do Disney Plus, replicando as imagens e navegações de forma semelhante ao site original. Utilizei o Gulp para automatizar tarefas, otimizando assim o desempenho do site e tornando a produção mais eficiente.', 
-    tech: 'HTML - JavaScript - Sass - Gulp'
+    id: 1,
+    thumbnail: 'thumbnail-eplay.webp',
+    urlGithub: 'https://github.com/rennanveras/eplay',
+    urlProjeto: 'https://eplay-deploy.vercel.app',
+    title: 'Eplay loja da jogos',
+    desc: 'Desenvolvi um e-commerce de jogos utilizando React, TypeScript e Redux para gerenciamento de estado. Esta experiência fortaleceu minhas habilidades em front-end, proporcionando conhecimento em construção de interfaces modernas e interativas. Integrando TypeScript, aprimorei a tipagem e robustez do código, demonstrando meu comprometimento com práticas avançadas de desenvolvimento.',
+    tech: 'React - Typescript - Redux - Styled Components - Api'
   },
+  
   {
     id: 2,
-    thumbnail: 'thumbnail-tarefas.png',
+    thumbnail: 'thumbnail-tarefas.webp',
     urlGithub: 'https://github.com/rennanveras/minhas-tarefas',
     urlProjeto: 'https://lista-de-tarefas-redux-liard.vercel.app',
     title: 'Lista de tarefas com filtro',
@@ -20,8 +21,17 @@ export const projectList: Project[] = [
     tech: 'ReactJs - Styled-components - Typescript - Redux'
   },
   {
+    id: 6,
+    thumbnail: 'thumbnail-efood.webp',
+    urlGithub: 'https://github.com/rennanveras/search_github',
+    urlProjeto: 'https://search-github-lyart.vercel.app',
+    title: 'Efood ',
+    desc: 'Este projeto consiste em uma lista de restaurantes cadastrados, apresentando seus respectivos pratos. Os usuários têm a capacidade de adicionar os pratos desejados ao carrinho, proporcionando uma experiência intuitiva e personalizável. Explore a diversidade de opções disponíveis e desfrute de uma plataforma amigável que simplifica a escolha e a compra de refeições.',
+    tech: ' React - Typescript - Redux - Styled Components - Api'
+  },
+  {
     id: 3,
-    thumbnail: 'thumbnail-neves.png',
+    thumbnail: 'thumbnail-neves.webp',
     urlGithub: 'https://github.com/rennanveras/landigpage-pai_2.0',
     urlProjeto: 'https://landigpage-pai-2-0.vercel.app',
     title: 'Landing Page Neves',
@@ -30,7 +40,7 @@ export const projectList: Project[] = [
   },
   {
     id: 4,
-    thumbnail: 'thumbnail-evento.png',
+    thumbnail: 'thumbnail-evento.webp',
     urlGithub: 'https://github.com/rennanveras/veras_tech_talks',
     urlProjeto: 'https://ebac-tech-talks-smoky.vercel.app',
     title: 'Landing Page evento',
@@ -40,7 +50,7 @@ export const projectList: Project[] = [
 
   {
     id: 5,
-    thumbnail: 'thumbnail-bella-russo.png',
+    thumbnail: 'thumbnail-bella-russo.webp',
     urlGithub: 'https://github.com/rennanveras/Bella-Russo-Pizzaria',
     urlProjeto: 'https://pizzaria-bootstrap.vercel.app',
     title: 'Pizzaria Bella Russo ',
@@ -48,16 +58,8 @@ export const projectList: Project[] = [
     tech: 'HTML - Gulp - Bootstrap - Sass - Jquery'
   },
   {
-    id: 6,
-    thumbnail: 'thumbnail-github.png',
-    urlGithub: 'https://github.com/rennanveras/search_github',
-    urlProjeto: 'https://search-github-lyart.vercel.app',
-    title: 'Procure o seu github',
-    desc: 'Este projeto consiste em um sistema para buscar perfis do GitHub e exibir seus repositórios. Durante o desenvolvimento, pude aprimorar minhas habilidades em React, principalmente no uso de APIs.',
-    tech: ' ReactJs - Styled Components'
-  },{
     id: 7,
-    thumbnail: 'thumbnail-medicenter.png',
+    thumbnail: 'thumbnail-medicenter.webp',
     urlGithub: 'https://github.com/rennanveras/page_medicenter',
     urlProjeto: 'https://page-medicenter-9gdeut4q7-rennanveras.vercel.app',
     title: 'Medicenter',
@@ -65,11 +67,20 @@ export const projectList: Project[] = [
     tech: ' HTML - CSS'
   },{
     id: 8,
-    thumbnail: 'thumbnail-hax.png',
+    thumbnail: 'thumbnail-hax.webp',
     urlGithub: 'https://github.com/rennanveras/Hax',
     urlProjeto: 'https://hax-ivory.vercel.app',
     title: 'Hax site estático',
     desc: 'Explore nosso site estático para conhecer nossa empresa, seus produtos de alta qualidade e os planos acessíveis que oferecemos em diversas localidades. Descubra detalhes sobre quem somos, nossos preços competitivos e como estamos comprometidos em atender às suas necessidades. Seja bem-vindo ao mundo da nossa empresa, onde a qualidade encontra a acessibilidade.',
     tech: ' HTML - CSS'
-  }
-  ];
+  },
+  {
+    id: 9, 
+    thumbnail: 'thumbnail-disney.webp', 
+    urlGithub: 'https://github.com/rennanveras/landingpage_disneyplus',
+    urlProjeto: 'https://landingpage-disneyplus-2eta-h00equ8z8-rennanveras.vercel.app',
+    title: 'Clone Disney+', 
+    desc: 'Este projeto consiste em uma landing page inspirada no design do Disney Plus, replicando as imagens e navegações de forma semelhante ao site original. Utilizei o Gulp para automatizar tarefas, otimizando assim o desempenho do site e tornando a produção mais eficiente.', 
+    tech: 'HTML - JavaScript - Sass - Gulp'
+  },
+];

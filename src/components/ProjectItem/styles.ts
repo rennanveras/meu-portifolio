@@ -19,11 +19,11 @@ export const Thumbnail = styled.div`
   border-radius: 20px;
     overflow: hidden;
     width: 100%;
-    height: 200px;
+    height: 300px;
     margin-bottom: 10px;
 
     @media (max-width: 480px) {
-    height: 160px;
+    height: 180px;
     }
     
     img {
