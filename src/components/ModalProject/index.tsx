@@ -19,12 +19,12 @@ export const ModalProject = ({ projectSelected, closeModal }: Props) => {
       <BackgroundModal onClick={closeModal}>
         <Modal>
           <AreaClose>
-              <img 
-                onClick={closeModal} 
-                src={close} 
-                className="button-closeModal" 
-                alt="Botão para fechar" 
-              />
+            <img 
+              onClick={closeModal} 
+              src={close} 
+              className="button-closeModal" 
+              alt="Botão para fechar" 
+            />
           </AreaClose>
           <ContentModal>           
             <ContentImg>
