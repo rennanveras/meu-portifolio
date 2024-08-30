@@ -1,7 +1,7 @@
 
 import HeroLeft from '../../components/HeroLeft';
-import foto from '/assets/img/hero.png'
-import HeroStyled, {  HeroRight } from './styles';
+import foto from '/assets/img/tec-hero.png'
+import HeroStyled, { HeroRight } from './styles';
 
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 }
 
 const Hero = ({ id }: Props) => {
-  return(
+  return (
     <HeroStyled id={id}>
       <HeroLeft />
       <HeroRight>
